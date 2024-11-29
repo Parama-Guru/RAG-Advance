@@ -1,0 +1,16 @@
+hypothetical document loading (any framework as it can be made )
+     
+     in this we will give the  query  to the llm and find the hypothetical ducument to it then we will embed this document
+     and give to the db to fetch the relevant documents 
+     has a disadvantage that is  if the llm doesnt have any information about the query
+
+Auto merging and heirarchical retreival (llamaindex has inbuilt ig  )
+
+    initally the document is split into chunks 
+    eg 2048(level1) - 512,512,512,512 (lv2) - 256,256 each (lvl3)
+
+    the query is embedded and found the relevant document in the final last layer 
+    this is heirarchical and retriever if the relevant document is then evaluated with the query if it doesnt have
+    the necessary information the it goes to the next level by auto merging the chunks 
+    this happens till the relevent information is got or till it goes to last level \.
+
